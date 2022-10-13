@@ -1,7 +1,9 @@
 import ImageSlider from "../../components/ImageSlider";
 import React, { useEffect, useState } from "react";
 import Aos from "aos";
-import axios from "axios";
+// import axios from "axios";
+import NewAlert from "../../components/news.component/NewAlert";
+
 
 const HomePage = () => {
   const [readMore, setReadMore] = useState(false);

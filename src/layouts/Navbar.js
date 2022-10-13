@@ -115,8 +115,8 @@ const NavBar = () => {
               </button>
               <div
                 className="hidden peer-hover:flex hover:flex
-         w-[200px] ml-5
-         flex-col bg-transparent drop-shadow-lg "
+                          w-[200px] ml-5
+                          flex-col bg-transparent drop-shadow-lg "
               >
                 <a className="no-underline" href="/fablabs/makadura">
                   makadura

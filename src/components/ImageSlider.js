@@ -17,10 +17,10 @@ const ImageSlider = () => {
     <>
       <div>
         <SimpleImageSlider
-          width={896}
+          width={1080}
           height={504}
           images={images}
-          showBullets={true}
+          // showBullets={true}
           showNavs={true}
         />
       </div>
