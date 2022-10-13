@@ -4,16 +4,18 @@ import Slider from "react-slick";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { HomeWrapper } from "./style";
-import styles from "../../styles/NewAlert.module.css"
-import { API_URL } from "../../config/index";
+import styles from "../../styles/NewAlert.module.css";
+import config from "../../config/index";
 
+console.log(config);
 const NewAlert = () => {
   const [news, setNews] = useState([]);
   // const [status, setStatus] = useState(isChacked);
 
   const getNews = async () => {
     try {
-      const response = await axios.get(`${API_URL}/api/newspage/`);
+      const response = await axios.get(`${config.API_URL}/api/newspage/`);
+      // const response = await axios.get("http://localhost:8000/api/newspage/");
       //only status is true data will be shown
       setNews(response.data.filter((item) => item.status === true)); //only status is true data will be shown
       console.log(response.data);

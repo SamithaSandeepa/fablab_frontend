@@ -4,7 +4,6 @@ import Aos from "aos";
 // import axios from "axios";
 import NewAlert from "../../components/news.component/NewAlert";
 
-
 const HomePage = () => {
   const [readMore, setReadMore] = useState(false);
 
@@ -94,7 +93,7 @@ const HomePage = () => {
             data-aos="fade-left"
             className="col-lg-4 lg:absolute top-0 right-0 lg:top-0 right-0"
           >
-            {/* <NewAlert /> */}
+            <NewAlert />
           </div>
         </div>
       </div>
